@@ -3,7 +3,7 @@ import styles from './leaderboard-card.module.scss';
 import crown from '../../../../assets/crown.svg';
 import grade from '../../../../assets/grade.svg';
 import section from '../../../../assets/section.svg';
-import avatar from '../../../../client/public/avatar/avatar-07.png';
+import avatar from '../../../../client/src/assets/avatar-07.png';
 import string from '../../../../assets/strings.json';
 
 export default function LeaderboardCard({ rank, student }: LeaderboardCardProps) {

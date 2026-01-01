@@ -1,6 +1,6 @@
 import styles from './leaderboard.module.scss';
 import logo from '../../../../assets/logo.svg';
-import school from '../../../../client/public/school.png';
+import school from '../../../../client/src/assets/school.png';
 import LeaderboardCard from './leaderboard-card';
 import { useLeaderboard } from '../../hooks/use-leaderboard';
 import { Audio } from 'react-loader-spinner';
