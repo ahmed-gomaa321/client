@@ -1,0 +1,26 @@
+@use './variables' as *;
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #007ffe 60%, #fff 40%);
+  font-family: $arabic-font;
+}
+
+@media (width < 768px) {
+  body {
+    background: linear-gradient(to bottom, #007ffe , #fff);
+  }
+}
+
+// font family styles
+.arabic-text {
+  font-style: normal;
+  font-family: $arabic-font;
+}
+.english-text {
+  font-style: normal;
+  font-family: $english-font;
+}
