@@ -3,7 +3,7 @@ import type { StudentsLeaderboardQuery } from '../lib/types/students-leaderboard
 import { STUDENTS_LEADERBOARD_QUERY } from '../lib/services/leaderboard.service';
 
 export function useLeaderboard() {
-  const { data, loading, error } = useQuery<StudentsLeaderboardQuery>(STUDENTS_LEADERBOARD_QUERY, {
+  const { data, loading, error, refetch } = useQuery<StudentsLeaderboardQuery>(STUDENTS_LEADERBOARD_QUERY, {
     variables: { schoolId: '1' },
   });
 
@@ -11,5 +11,6 @@ export function useLeaderboard() {
     data: data?.studentsLeaderboard,
     loading,
     error,
+    refetch,
   };
 }

@@ -12,7 +12,7 @@ export default function Leaderboard() {
   const t = string;
 
   //hooks
-  const { data, loading, error } = useLeaderboard();
+  const { data, loading, error, refetch } = useLeaderboard();
 
   // students
   const students = data?.students ?? [];
@@ -35,7 +35,7 @@ export default function Leaderboard() {
           </figure>
         </nav>
         <main className={styles.leaderBoardMain}>
-          <Error />
+          <Error onRetry={() => refetch()} />
         </main>
       </div>
     );
